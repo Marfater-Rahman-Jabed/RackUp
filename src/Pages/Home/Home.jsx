@@ -1,4 +1,5 @@
 import HeroSection from "../../Components/HeroSection/HeroSection";
+import PostPhotosSection from "../../Components/PostPhotosSection/PostPhotosSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <HeroSection></HeroSection>
             <WorkFastDiv></WorkFastDiv>
+            <PostPhotosSection></PostPhotosSection>
         </div>
     );
 };
