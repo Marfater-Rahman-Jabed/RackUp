@@ -6,7 +6,7 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { GoSync } from 'react-icons/go';
 const MakesDiv = () => {
     return (
-        <div className='bg-base-200'>
+        <div className='bg-base-200 pb-16'>
             <div className="text-center pt-20 mb-16">
                 <h1 className="text-5xl font-bold mb-8">What Makes NextApp Different</h1>
                 <p className='text-xl text-slate-400'>
@@ -17,7 +17,7 @@ const MakesDiv = () => {
 
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
-                        <TbHandClick className='text-5xl mt-1 mr-3'></TbHandClick>
+                        <TbHandClick className='text-5xl mt-1 text-slate-600 mr-3'></TbHandClick>
                     </span>
                     <span>
                         <h1 className='text-xl font-bold mb-2'>
@@ -30,7 +30,7 @@ const MakesDiv = () => {
                 </div>
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
-                        <IoIosOptions className='text-5xl mt-1 mr-3'></IoIosOptions>
+                        <IoIosOptions className='text-5xl mt-1 text-slate-600 mr-3'></IoIosOptions>
                     </span>
                     <span>
                         <h1 className='text-xl font-bold mb-2'>
@@ -43,7 +43,7 @@ const MakesDiv = () => {
                 </div>
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
-                        <CiImageOn className='text-5xl mt-1 mr-3'></CiImageOn>
+                        <CiImageOn className='text-5xl mt-1 text-slate-600 mr-3'></CiImageOn>
 
                     </span>
                     <span>
@@ -57,7 +57,7 @@ const MakesDiv = () => {
                 </div>
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
-                        <BiNotification className='text-5xl mt-1 mr-3'></BiNotification>
+                        <BiNotification className='text-5xl mt-1 text-slate-600 mr-3'></BiNotification>
                     </span>
                     <span>
                         <h1 className='text-xl font-bold mb-2'>
@@ -74,7 +74,7 @@ const MakesDiv = () => {
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
 
-                        <HiOutlineLocationMarker className='text-5xl mt-1 mr-3'></HiOutlineLocationMarker>
+                        <HiOutlineLocationMarker className='text-5xl mt-1 text-slate-600 mr-3'></HiOutlineLocationMarker>
                     </span>
                     <span>
                         <h1 className='text-xl font-bold mb-2'>
@@ -90,7 +90,7 @@ const MakesDiv = () => {
 
                 <div className='lg:w-80 w-96 flex  mb-4'>
                     <span>
-                        <GoSync className='text-5xl mt-1 mr-3'></GoSync>
+                        <GoSync className='text-5xl mt-1 text-slate-600 mr-3'></GoSync>
 
                     </span>
                     <span>
