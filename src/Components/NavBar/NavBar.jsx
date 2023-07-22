@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.jpg'
+
 const NavBar = () => {
     return (
         <div style={{ position: "sticky", top: 0, zIndex: 100 }}>
@@ -31,7 +32,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className='flex lg:mx-4 '>
-                        <img src={Logo} alt="" className='w-20 h-20 rounded-full mx-4' />
+                        <img src={Logo} alt="" className='w-20 h-20 rounded-full mr-2' />
                         <Link to='/' className=" normal-case text-5xl mt-4 font-bold" >RACKUP</Link>
                     </div>
                 </div>

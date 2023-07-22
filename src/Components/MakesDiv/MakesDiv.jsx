@@ -8,7 +8,7 @@ const MakesDiv = () => {
     return (
         <div className='bg-base-200 pb-16'>
             <div className="text-center pt-20 mb-16">
-                <h1 className="text-5xl font-bold mb-8">What Makes NextApp Different</h1>
+                <h1 className="lg:text-5xl text-3xl font-bold lg:mb-8 mb-4">What Makes NextApp Different</h1>
                 <p className='text-xl text-slate-400'>
                     Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
                 </p>

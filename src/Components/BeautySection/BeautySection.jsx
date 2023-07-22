@@ -6,7 +6,7 @@ import image4 from '../../assets/Hero-image-04.png'
 const BeautySection = () => {
     return (
         <div className='lg:flex  bg-base-200 lg:py-28 py-16'>
-            <div className=' lg:w-[40vw] w-[90vw] mx-auto lg:mt-20 mt-12'>
+            <div className=' lg:w-[40vw] w-[90vw] mx-auto lg:mt-20 mt-12 mb-5'>
                 <h1 className='text-slate-300 font-bold'>BEAUTY OF SIMPLICITY</h1>
                 <br />
                 <h1 className='lg:text-5xl text-4xl font-bold mb-4'>Elegant intuitive <br /> user interface</h1>
@@ -19,7 +19,7 @@ const BeautySection = () => {
                 </div>
 
             </div>
-            <div className='lg:w-[40vw] lg:h-full  lg:me-8  px-2'>
+            <div className='lg:w-[40vw] lg:h-full  lg:me-8  px-2 '>
                 <img src={image4} alt="" className='lg:w-[28vw] w-[90vw] lg:h-[100vh] h-[70vh] mt-2' />
             </div>
         </div>
