@@ -6,6 +6,7 @@ import MakesDiv from "../../Components/MakesDiv/MakesDiv";
 import MemoriesSection from "../../Components/MemoriesSection/MemoriesSection";
 import PostPhotosSection from "../../Components/PostPhotosSection/PostPhotosSection";
 import PowerFullAppSection from "../../Components/PowerFullAppSection/PowerFullAppSection";
+import QuestionSection from "../../Components/QuestionSection/QuestionSection";
 import SimpleInterfaceSection from "../../Components/SimpleInterfaceSection/SimpleInterfaceSection";
 import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
@@ -24,6 +25,7 @@ const Home = () => {
             <SimpleInterfaceSection></SimpleInterfaceSection>
             <CustomerReviewSection></CustomerReviewSection>
             <UnLockSection></UnLockSection>
+            <QuestionSection></QuestionSection>
         </div>
     );
 };

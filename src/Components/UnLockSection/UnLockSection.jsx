@@ -2,7 +2,7 @@ import bike from '../../assets/Bike.png'
 import helikopter from '../../assets/helikopter.png'
 const UnLockSection = () => {
     return (
-        <div>
+        <div className='mb-20'>
             <div className='pt-28'>
                 <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold ">Unlock Full Power Of The NextApp</h1>
                 <p className="text-center text-slate-500 text-xl">
