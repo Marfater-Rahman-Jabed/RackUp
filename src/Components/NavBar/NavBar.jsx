@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo.jpg'
 const NavBar = () => {
     return (
         <div style={{ position: "sticky", top: 0, zIndex: 100 }}>
-            <div className="navbar bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-white py-4 ">
+            <div className="navbar bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-white py-4 " style={{ backgroundImage: "linear-gradient(180deg, purple 1px, 1px)", backgroundSize: "3px 3px" }}>
                 <div className="lg:navbar-start ">
 
                     <div className="dropdown">

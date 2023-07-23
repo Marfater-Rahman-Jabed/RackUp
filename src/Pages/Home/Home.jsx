@@ -1,3 +1,4 @@
+import AliThemeSection from "../../Components/AliThemeSection/AliThemeSection";
 import BeautySection from "../../Components/BeautySection/BeautySection";
 import CrossPlatformSection from "../../Components/CrossPlatformSection/CrossPlatformSection";
 import CustomerReviewSection from "../../Components/CustomerReviewSection/CustomerReviewSection";
@@ -8,6 +9,7 @@ import PostPhotosSection from "../../Components/PostPhotosSection/PostPhotosSect
 import PowerFullAppSection from "../../Components/PowerFullAppSection/PowerFullAppSection";
 import QuestionSection from "../../Components/QuestionSection/QuestionSection";
 import SimpleInterfaceSection from "../../Components/SimpleInterfaceSection/SimpleInterfaceSection";
+import SubscribeSection from "../../Components/SubscribeSection/SubscribeSection";
 import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
 
@@ -26,6 +28,8 @@ const Home = () => {
             <CustomerReviewSection></CustomerReviewSection>
             <UnLockSection></UnLockSection>
             <QuestionSection></QuestionSection>
+            <AliThemeSection></AliThemeSection>
+            <SubscribeSection></SubscribeSection>
         </div>
     );
 };

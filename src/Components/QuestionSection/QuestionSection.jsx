@@ -6,7 +6,7 @@ const QuestionSection = () => {
                 <h1 className="lg:text-5xl text-4xl font-bold  text-center mb-4">Have Questions? Look Here.</h1>
                 <p className=" text-center text-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta</p>
             </div>
-            <div className="lg:mx-48">
+            <div className="lg:mx-48 mx-4">
                 <div className="collapse   items-center bg-base-200  border-none rounded-none">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-2xl font-bold  ">

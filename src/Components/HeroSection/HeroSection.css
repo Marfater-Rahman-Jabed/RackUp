@@ -1,0 +1,7 @@
+.bgCss {
+    background-image: linear-gradient(180deg, purple 1px, 1px),
+        linear-gradient(90deg, purple 1px, 1px);
+    background-size: 3px 3px;
+
+
+}
