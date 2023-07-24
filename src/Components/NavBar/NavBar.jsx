@@ -16,8 +16,13 @@ const NavBar = () => {
                             <li>
                                 <a>Pages</a>
                                 <ul className="p-2">
-                                    <li><a>Home</a></li>
-                                    <li><a>Our Goal</a></li>
+
+                                    <li className='text-black font-semibold '><Link to='/makeDiv'>Our Goal</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/pricing'>Pricing</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/reviews'>Review</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/makeDiv'>FAQs</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/makeDiv'>Terms</Link></li>
+
                                 </ul>
                             </li>
                             <li><a>Contact</a></li>
@@ -31,20 +36,24 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <div className='flex lg:mx-4 '>
+                    <div className='flex lg:mx-4 md:mx-6'>
                         <img src={Logo} alt="" className='w-20 h-20 rounded-full mr-2' />
                         <Link to='/' className=" normal-case text-5xl mt-4 font-bold" >RACKUP</Link>
                     </div>
                 </div>
-                <div className="navbar-center  hidden lg:flex md:flex lg:me-6 ">
+                <div className="lg:navbar-end md:navbar-center  hidden lg:flex md:flex lg:me-6 ">
                     <ul className="menu menu-horizontal px-1 ">
                         <li className='text-xl font-bold  hover:bg-pink-500 rounded-md'><Link to='/' className='hover:text-white'>Home</Link></li>
                         <li tabIndex={0}>
                             <details>
                                 <summary className='text-xl font-bold hover:text-white hover:bg-pink-500'>Pages</summary>
-                                <ul className="p-2">
-                                    <li className='text-black  '><Link to='/'>Home</Link></li>
-                                    <li className='text-black  '><Link to='/makeDiv'>Our Goal</Link></li>
+                                <ul className="p-4">
+
+                                    <li className='text-black font-semibold '><Link to='/makeDiv'>Our Goal</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/pricing'>Pricing</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/reviews'>Review</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/makeDiv'>FAQs</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/terms'>Terms</Link></li>
                                 </ul>
                             </details>
                         </li>

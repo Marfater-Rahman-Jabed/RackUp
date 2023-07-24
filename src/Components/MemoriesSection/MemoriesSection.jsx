@@ -1,6 +1,7 @@
 import logoRegister from '../../assets/Hero-image-06.png'
 import Customize from '../../assets/Customize.png'
 import Connect from '../../assets/Connect.png'
+
 const MemoriesSection = () => {
     return (
         <div className="bg-slate-800  ">

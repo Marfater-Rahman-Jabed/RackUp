@@ -8,7 +8,7 @@ const QuestionSection = () => {
                 <p className=" text-center text-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta</p>
             </div>
             <div className="lg:mx-48 md:mx-20 mx-4">
-                <Fade direction="up" delay={1000}>
+                <Fade direction="up" delay={500}>
                     <div className="collapse   items-center bg-base-200  border-none rounded-none">
                         <input type="radio" name="my-accordion-3" />
                         <div className="collapse-title text-2xl font-bold  ">

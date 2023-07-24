@@ -5,7 +5,7 @@ const PostPhotosSection = () => {
     return (
         <div className='lg:flex md:flex mt-16 bg-slate-800 pt-20 pb-10 lg:ps-16'>
             <div className='lg:w-1/2 lg:flex lg:justify-end'>
-                <Fade direction='up'>
+                <Fade direction='left' duration={3000}>
                     <img src={Logo3} alt="" className='lg:w-[40vw]  lg:h-[70vh]' />
                 </Fade>
             </div>

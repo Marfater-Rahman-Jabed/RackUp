@@ -22,7 +22,7 @@ const HeroSection = () => {
 
                 <div className='lg:w-[40vw] md:w-[40vw] lg:h-full md:h-[50vh] h-0  me-16 lg:visible md:visible invisible '>
                     <Fade direction='left' duration={3000}>
-                        <img src={HeroImage} alt="" className='w-[40vw] h-[85vh] md:h-[50vh]' />
+                        <img src={HeroImage} alt="" className='w-[40vw] lg:h-[85vh] md:h-[50vh]' />
                     </Fade>
                 </div>
 

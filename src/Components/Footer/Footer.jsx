@@ -2,7 +2,7 @@ import Logo from '../../assets/Logo.jpg'
 const Footer = () => {
     return (
         <div className=''>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer p-10 bg-black text-white">
                 <div>
                     <img src={Logo} alt="" className='w-36 h-28' />
                     <p>RackUp IT Solution.<br />Providing reliable tech since 1992</p>
