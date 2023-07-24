@@ -6,7 +6,7 @@ const CustomerReviewSection = () => {
                 <h1 className="lg:text-5xl text-4xl font-bold  text-center mb-4">What Our Customers Are Saying</h1>
                 <p className=" text-center text-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta</p>
             </div>
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 lg:mx-20 mx-6 mt-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-4 gap-2 lg:mx-20 mx-6 mt-10">
 
                 <div className="card  mb-4 w-full min-h-fit  bg-base-100 shadow-xl">
                     <div className="card-body">

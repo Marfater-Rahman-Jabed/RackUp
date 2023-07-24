@@ -10,7 +10,7 @@ const MemoriesSection = () => {
                     Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
                 </p>
             </div>
-            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mt-24 lg:ms-28 px-28'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 mt-24 lg:ms-28 md:ms-4 px-28'>
                 <div >
                     <span className="rounded-full bg-slate-700 flex justify-center items-center w-40 h-40 ">
                         <img src={logoRegister} alt="" className='   w-24 h-24' />

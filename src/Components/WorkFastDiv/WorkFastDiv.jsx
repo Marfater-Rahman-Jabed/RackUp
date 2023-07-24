@@ -1,12 +1,21 @@
 import { BsDot } from 'react-icons/bs';
 import Logo2 from '../../assets/Hero-image02.png'
+import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
+// import { useRef } from 'react';
 const WorkFastDiv = () => {
+    // const sectionRef = useRef(null);
+
     return (
-        <div className='lg:flex mt-16'>
+        <div className='lg:flex md:flex mt-16'>
+
             <div className='lg:w-1/2 lg:flex lg:justify-end'>
-                <img src={Logo2} alt="" className='lg:w-[40vw] lg:h-[70vh]' />
+                <Fade delay={700} >
+                    <img src={Logo2} alt="" className='lg:w-[40vw] md:w-[40vw] lg:h-[70vh] md:h-[35vh]' />
+                </Fade>
             </div>
-            <div className='lg:w-1/2 ms-2 mt-2'>
+
+            <div className='lg:w-1/2 md:w-1/2 ms-2 mt-2'>
                 <h1 className='text-slate-300 font-bold'>FULLY CUSTOMIZABLE</h1>
                 <br />
                 <h1 className='text-5xl font-bold'>Work faster with <br /> powerful tools</h1><br />
@@ -17,7 +26,9 @@ const WorkFastDiv = () => {
                     <BsDot className='text-2xl'></BsDot> Egestas magna ipsum vitae purus efficitur ipsum cubilia and <br /> laoreet pretium ligula rutrum luctus</h1>
 
 
-                <button className='btn btn-outline rounded-full btn-sm mt-6 ms-4'>Learn more about it</button>
+                <Link to='/makeDiv'>
+                    <button className='btn btn-outline rounded-full btn-sm mt-6 ms-4' >Learn more about it</button>
+                </Link>
 
             </div>
         </div>
