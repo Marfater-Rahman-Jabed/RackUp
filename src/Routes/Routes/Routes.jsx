@@ -5,6 +5,8 @@ import AppDifferentPage from "../../Pages/AppDifferentPage/AppDifferentPage";
 import Pricing from "../../Pages/Pricing/Pricing";
 import ClientReviews from "../../Pages/ClientReviews/ClientReviews";
 import Terms from "../../Pages/Terms/Terms";
+import FAQSPage from "../../Pages/FAQSPage/FAQSPage";
+import ContactPage from "../../Pages/ContactPage/ContactPage";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
             {
                 path: '/terms',
                 element: <Terms></Terms>
+            },
+            {
+                path: '/faqs',
+                element: <FAQSPage></FAQSPage>
+            },
+            {
+                path: '/contact',
+                element: <ContactPage></ContactPage>
             }
         ]
     }

@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import Starter from '../../assets/Starter.png'
 import Basic from '../../assets/Basic.png'
 import Premium from '../../assets/Premium.png'
+import { useEffect } from "react";
 const Pricing = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className="pb-10">
             <div className="p-4 bg-base-300 ">

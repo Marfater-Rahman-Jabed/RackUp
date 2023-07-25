@@ -20,7 +20,7 @@ const NavBar = () => {
                                     <li className='text-black font-semibold '><Link to='/makeDiv'>Our Goal</Link></li>
                                     <li className='text-black font-semibold '><Link to='/pricing'>Pricing</Link></li>
                                     <li className='text-black font-semibold '><Link to='/reviews'>Review</Link></li>
-                                    <li className='text-black font-semibold '><Link to='/makeDiv'>FAQs</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/faqs'>FAQs</Link></li>
                                     <li className='text-black font-semibold '><Link to='/makeDiv'>Terms</Link></li>
 
                                 </ul>
@@ -52,7 +52,7 @@ const NavBar = () => {
                                     <li className='text-black font-semibold '><Link to='/makeDiv'>Our Goal</Link></li>
                                     <li className='text-black font-semibold '><Link to='/pricing'>Pricing</Link></li>
                                     <li className='text-black font-semibold '><Link to='/reviews'>Review</Link></li>
-                                    <li className='text-black font-semibold '><Link to='/makeDiv'>FAQs</Link></li>
+                                    <li className='text-black font-semibold '><Link to='/faqs'>FAQs</Link></li>
                                     <li className='text-black font-semibold '><Link to='/terms'>Terms</Link></li>
                                 </ul>
                             </details>

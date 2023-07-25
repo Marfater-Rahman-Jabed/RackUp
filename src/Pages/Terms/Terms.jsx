@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { BsDot } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Terms = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <div className="p-4 bg-base-300 ">

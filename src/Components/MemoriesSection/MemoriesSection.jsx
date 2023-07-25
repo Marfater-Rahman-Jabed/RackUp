@@ -1,6 +1,7 @@
 import logoRegister from '../../assets/Hero-image-06.png'
 import Customize from '../../assets/Customize.png'
 import Connect from '../../assets/Connect.png'
+import { Link } from 'react-router-dom';
 
 const MemoriesSection = () => {
     return (
@@ -33,7 +34,7 @@ const MemoriesSection = () => {
 
             </div>
             <div className='text-center'>
-                <button className='btn bg-green-500 mt-16 px-10 rounded-full font-bold text-white hover:bg-slate-700 mb-16'>Learn more About it </button>
+                <button className='btn bg-green-500 mt-16 px-10 rounded-full font-bold text-white hover:bg-slate-700 mb-16'><Link to='/pricing'>Learn more About it</Link> </button>
             </div>
         </div>
     );

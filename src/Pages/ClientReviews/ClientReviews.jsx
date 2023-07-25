@@ -3,8 +3,12 @@ import CustomerReviewSection from "../../Components/CustomerReviewSection/Custom
 import { Fade } from "react-awesome-reveal";
 import Logo from '../../assets/Logo.jpg'
 import { AiOutlineStar } from "react-icons/ai";
+import { useEffect } from "react";
 
 const ClientReviews = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <div className="p-4 bg-base-300 ">

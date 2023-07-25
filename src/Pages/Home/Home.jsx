@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AliThemeSection from "../../Components/AliThemeSection/AliThemeSection";
 import BeautySection from "../../Components/BeautySection/BeautySection";
 import CrossPlatformSection from "../../Components/CrossPlatformSection/CrossPlatformSection";
@@ -14,6 +15,9 @@ import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <HeroSection></HeroSection>
