@@ -10,6 +10,8 @@ import ContactPage from "../../Pages/ContactPage/ContactPage";
 import About from "../../Pages/About/About";
 import Privacy from "../../Pages/Privacy/Privacy";
 import Cookies from "../../Pages/Cookies/Cookies";
+import Blog1 from "../../Pages/Blog/Blog1/Blog1";
+import Blog2 from "../../Pages/Blog/Blog2/Blog2";
 
 export const router = createBrowserRouter([
     {
@@ -55,6 +57,14 @@ export const router = createBrowserRouter([
             {
                 path: '/cookies',
                 element: <Cookies></Cookies>
+            },
+            {
+                path: '/blog1',
+                element: <Blog1></Blog1>
+            },
+            {
+                path: '/blog2',
+                element: <Blog2></Blog2>
             }
         ]
     }

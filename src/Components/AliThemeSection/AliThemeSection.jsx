@@ -8,7 +8,7 @@ const AliThemeSection = () => {
         <div>
             <div className="py-20 ">
                 <h1 className="lg:text-5xl text-4xl font-bold  text-center mb-4 lg:px-72 md:px-16">Universal Solutions: Empowering Everyone</h1>
-                <p className=" text-center text-xl lg:px-32 md:px-10">Our inclusive platform caters to every user, embracing diversity, and delivering excellence across the board.Whether you&apos;re a small nonprofit, personal project, or large enterprise, our tailored solutions cater to your unique needs</p>
+                <p className=" text-center text-xl lg:px-32 md:px-10">Our inclusive platform caters to every user, embracing diversity, and delivering excellence across the board. Whether your personal project,nonprofit organisation, small business or large enterprise, our tailored solutions cater to your unique needs.</p>
             </div>
             <div className="grid  lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 lg:mx-40 mx-10 pb-4">
                 <Fade duration={1000}>

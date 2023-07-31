@@ -29,8 +29,8 @@ const NavBar = () => {
                             <li>
                                 <a>Blogs</a>
                                 <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                    <li><Link to='/blog1'>Business Blog</Link></li>
+                                    <li className='text-black'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
                             </li>
 
@@ -64,8 +64,8 @@ const NavBar = () => {
                             <details>
                                 <summary className='text-xl font-bold hover:text-white hover:bg-pink-500'>Blogs</summary>
                                 <ul className="p-2">
-                                    <li className='text-black'><a>Submenu 1</a></li>
-                                    <li className='text-black'><a>Submenu 2</a></li>
+                                    <li><Link to='/blog1' className='text-black'>App Blog</Link></li>
+                                    <li className='text-black'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
                             </details>
                         </li>

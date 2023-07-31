@@ -16,11 +16,11 @@ const HeroSection = () => {
                     </Fade>
                 </div>
 
-                <div className=' lg:w-[40vw] md:w-[40vw] w-[90vw] mx-auto flex flex-col  justify-center items-center text-white text-justify'>
+                <div className=' lg:w-[45vw] md:w-[40vw] w-[90vw] mx-auto flex flex-col  justify-center items-center text-white text-justify'>
                     <Fade direction='up' duration={3000}>
-                        <h1 className='lg:text-5xl text-4xl font-bold text-center'>Blend Your Dream
+                        <h1 className='lg:text-6xl text-4xl font-bold text-center'>Blend Your Dream
                             <br />Businesses Online </h1> <br />
-                        <h1 className='font-semibold font-sans lg:text-justify lg:ms-20 text-center'>Increase brand visibility on customer&apos;s  phones!.Seamlessly integrate your physical stores with our app/web service. Enhance the shopping experience!</h1>
+                        <h1 className='font-semibold font-sans lg:text-justify lg:ms-16 text-center'>Increase brand visibility on customer&apos;s  phones!. Seamlessly integrate your physical stores with our app/web service. Enhance the shopping experience!</h1>
                         <span className='flex mt-6'>
                             <button className='btn btn-outline text-white'><BsPhone className='text-xl'></BsPhone>Available on <br /> AppStore</button>
                             <button className='btn btn-outline mx-4 text-white'><BiLogoPlayStore className='text-xl'></BiLogoPlayStore>Google Play</button></span>
