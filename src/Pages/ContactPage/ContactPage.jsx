@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const ContactPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className="bg-base-300 ">
             <div className="p-4 bg-base-300 ">
@@ -12,7 +16,7 @@ const ContactPage = () => {
                     Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
                 </p>
             </div>
-            <div className="mx-80 pb-12">
+            <div className="lg:mx-80 md:mx-32 mx-4 pb-12">
                 <form action="">
                     <div className="form-control w-full ">
                         <label className="label">
@@ -57,7 +61,7 @@ const ContactPage = () => {
                     <div className="form-control mb-6">
                         <label className="label mb-2">
                             <span className="label-text"><h1 className="font-semibold text-xl">Explain your question in details:</h1>
-                                <h1 className="text-slate-500">Your OS version, NextApp version build, steps you did. Be VERY precise!
+                                <h1 className="text-slate-500">Your OS version, RackUp version build, steps you did. Be VERY precise!
                                 </h1>
                             </span>
 

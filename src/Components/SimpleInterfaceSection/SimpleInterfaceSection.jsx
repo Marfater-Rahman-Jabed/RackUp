@@ -54,7 +54,7 @@ const SimpleInterfaceSection = () => {
         <div className=" py-32">
             <div className="mb-10">
                 <h1 className='lg:text-5xl text-4xl font-bold text-center mb-8'>Simple Beautiful User Interface</h1>
-                <p className=" text-center text-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta</p>
+                <p className=" text-center text-xl md:px-10 lg:px-64">Embrace simplicity and beauty in our user interface. An elegant and delightful design awaits, making your experience unforgettable</p>
             </div>
             <div className="lg:px-24 md:px-12 px-5 py-6 ">
                 <Slider {...settings}>

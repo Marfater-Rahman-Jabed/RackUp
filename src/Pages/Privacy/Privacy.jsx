@@ -1,0 +1,121 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
+const Privacy = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    return (
+        <div>
+            <div className="p-4 bg-base-300 ">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Privacy Policy</span></h1>
+            </div>
+            <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-28 pb-10">
+
+                <div>
+                    <h1 className="text-xl mb-2 font-semibold">
+                        Your privacy is of utmost importance to RackUp. This Privacy Policy outlines how we collect, use, and protect your personal information when you access and use our website and services. By using RackUp, you consent to the practices described below:
+                    </h1>
+
+                </div>
+
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        1. Information Collection
+                    </h1>
+                    <p className="font-serif">
+                        We may collect personal information such as your name, email address, contact details, and payment information when you sign up or use our services
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        2. Use of Information
+                    </h1>
+                    <p className="font-serif">
+                        We use the collected information to provide and improve our services, process transactions, communicate with you, and send relevant updates.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        3. Cookies and Tracking Technologies
+                    </h1>
+                    <p className="font-serif">
+                        RackUp and its partners may use cookies and tracking technologies to enhance user experience and gather usage data.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        4. Third-Party Sharing
+                    </h1>
+                    <p className="font-serif">
+                        We may share your information with trusted third-party service providers who assist us in delivering our services.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        5. Data Security
+                    </h1>
+                    <p className="font-serif">
+                        RackUp employs industry-standard measures to protect your data from unauthorized access, loss, or misuse.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        6.Data Retention
+                    </h1>
+                    <p className="font-serif">
+                        We will retain your personal information as long as necessary to fulfill the purposes outlined in this Privacy Policy
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        7.  Children&apos;s Privacy
+                    </h1>
+                    <p className="font-serif">
+                        RackUp does not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        8. Opt-Out
+                    </h1>
+                    <p className="font-serif">
+                        You may opt-out of receiving promotional emails from RackUp at any time by following the instructions provided in the email.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        9. Updates
+                    </h1>
+                    <p className="font-serif">
+                        RackUp reserves the right to update or modify this Privacy Policy as needed. We will notify you of any significant changes through our website or email.
+                    </p>
+
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold py-6">
+                        10. Contact Us
+                    </h1>
+                    <p className="font-serif">
+                        If you have any questions or concerns about this Privacy Policy or our practices, please contact us at [contact@rackup.com].
+                    </p>
+
+                </div>
+
+            </div>
+            <div className="px-32 mb-20 font-bold">
+                By using RackUp&apos;s services, you acknowledge that you have read, understood, and agreed to this Privacy Policy. For more details on how we handle your personal information, please review this Privacy Policy in full. Last updated on 07.31.2023.
+            </div>
+        </div>
+    );
+};
+
+export default Privacy;

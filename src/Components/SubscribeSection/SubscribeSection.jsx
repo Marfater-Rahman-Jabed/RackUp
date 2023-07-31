@@ -3,11 +3,11 @@ const SubscribeSection = () => {
     return (
         <div className="bg-base-300 pb-10">
             <div className="pt-20">
-                <h1 className="text-center">GRAB NEXTAPP FOR THE BEST PRICE TODAY</h1>
+                <h1 className="text-center">GRAB RackUp FOR THE BEST PRICE TODAY</h1>
             </div>
             <div className="py-8">
                 <h1 className="lg:text-5xl text-4xl font-bold  text-center mb-4">Subscribe For Updates</h1>
-                <p className=" text-center text-xl">Subscribe to our newsletter now and our <br /> delivery owl will bring you our best deals, ideas and news about NextApp App</p>
+                <p className=" text-center text-xl">Subscribe to our newsletter now and our <br /> delivery owl will bring you our best deals, ideas and news about RackUp App</p>
             </div>
             <div className="lg:w-1/2 w-10/12 mx-auto">
                 <form className="">

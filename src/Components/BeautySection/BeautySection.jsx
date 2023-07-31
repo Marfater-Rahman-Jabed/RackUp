@@ -12,7 +12,7 @@ const BeautySection = () => {
                     <h1 className='text-slate-300 font-bold'>BEAUTY OF SIMPLICITY</h1>
                     <br />
                     <h1 className='lg:text-5xl text-4xl font-bold mb-4'>Elegant intuitive <br /> user interface</h1>
-                    <h1 className='font-semibold font-sans lg:text-justify text-center'>An enim nullam tempor sapien gravida donec an ipsum pretium porta justo integer at odio velna vitae auctor integer and congue magna at purus pretium ligula rutrum luctus ultrice undo gravida lectus suscipit gestas magna suscipit luctus undo</h1>
+                    <h1 className='font-semibold font-sans lg:text-justify text-center'>Step into our world of an elegant, intuitive user interface that captivates your senses and simplifies your journey with seamless grace and unparalleled charm</h1>
                     <div className='grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-4 mt-12 lg:ms-0 md:ms-2 ms-12'>
                         <div className=''><IoIosOptions className='text-7xl md:text-4xl text-slate-600'></IoIosOptions> PowerFull <br /> Option</div>
                         <div><PiNotificationBold className='text-7xl md:text-4xl text-slate-600'></PiNotificationBold>Smart <br /> Notification</div>

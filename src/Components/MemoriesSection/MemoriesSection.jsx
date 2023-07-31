@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const MemoriesSection = () => {
     return (
         <div className="bg-slate-800  ">
-            <div className='pt-28'>
-                <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold text-white">Capture Share Your Best Memories</h1>
-                <p className="text-center text-white">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
+            <div className='pt-28 lg:px-72 md:px-32'>
+                <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold text-white">Unleash Your Imagination: Dream, Innovate, Create</h1>
+                <p className="text-center text-white ">
+                    Boundless creativity, soaring dreams. Symphony of inspiration births remarkable ideas, crafting an enduring legacy echoing through time and space.
                 </p>
             </div>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 mt-24 lg:ms-28 md:ms-4 px-28'>
@@ -34,7 +34,7 @@ const MemoriesSection = () => {
 
             </div>
             <div className='text-center'>
-                <button className='btn bg-green-500 mt-16 px-10 rounded-full font-bold text-white hover:bg-slate-700 mb-16'><Link to='/pricing'>Learn more About it</Link> </button>
+                <Link to='/pricing' className='btn bg-green-500 mt-16 px-10 rounded-full font-bold text-white hover:bg-slate-700 mb-16'>Learn more About it</Link>
             </div>
         </div>
     );

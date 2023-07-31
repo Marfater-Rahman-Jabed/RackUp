@@ -6,7 +6,7 @@ const PowerFullAppSection = () => {
             <div className="lg:mx-64 px-2">
                 <div className="mb-12">
                     <h1 className="lg:text-5xl text-4xl font-bold text-white text-center mb-4">More Faster, More Powerful App</h1>
-                    <p className="text-white text-center text-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta</p>
+                    <p className="text-white text-center text-xl">Experience the thrill of a faster, more powerful app that sets new standards for seamless performance and user satisfaction.</p>
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 text-center lg:ms-16 ms-6">
                     <Fade direction="up" >

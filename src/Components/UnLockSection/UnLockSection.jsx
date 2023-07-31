@@ -5,7 +5,7 @@ const UnLockSection = () => {
     return (
         <div className='mb-20'>
             <div className='pt-28'>
-                <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold ">Unlock Full Power Of The NextApp</h1>
+                <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold ">Unlock Full Power Of The RackUp</h1>
                 <p className="text-center text-slate-500 text-xl">
                     Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
                 </p>
@@ -14,7 +14,7 @@ const UnLockSection = () => {
                 <Fade direction='right' delay={500} duration={3000}>
                     <div className='border-4 border-slate-100 rounded-lg p-12 shadow-lg'>
                         <img src={bike} alt="" className='w-32 mx-16 items-center' />
-                        <h1 className='text-center text-2xl font-bold my-4'><span className='text-slate-500'>NextApp</span> Free</h1>
+                        <h1 className='text-center text-2xl font-bold my-4'><span className='text-slate-500'>RackUp</span> Free</h1>
                         <h1 className='text-center text-2xl mb-8'><b className='text-5xl font-bold'>$0</b>/mo</h1>
                         <h1 className='text-center text-xl mb-4'>20 Users Tasks</h1>
                         <h1 className='text-center text-xl mb-4'>5 GB of Storage</h1>
@@ -31,7 +31,7 @@ const UnLockSection = () => {
                 <Fade direction='left' delay={500} duration={3000}>
                     <div className='border-4 border-slate-100 rounded-lg p-12 shadow-lg'>
                         <img src={helikopter} alt="" className='w-32 mx-16 items-center' />
-                        <h1 className='text-center text-2xl font-bold my-4'><span className='text-slate-500'>NextApp</span>  Pro</h1>
+                        <h1 className='text-center text-2xl font-bold my-4'><span className='text-slate-500'>RackUp</span>  Pro</h1>
                         <h1 className='text-center text-2xl mb-8'><b className='text-5xl font-bold'>$2.39</b>/mo</h1>
                         <h1 className='text-center text-xl mb-4'>Unlimited Tasks</h1>
                         <h1 className='text-center text-xl mb-4'>10 GB of Storage</h1>

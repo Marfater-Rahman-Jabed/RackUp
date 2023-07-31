@@ -7,6 +7,9 @@ import ClientReviews from "../../Pages/ClientReviews/ClientReviews";
 import Terms from "../../Pages/Terms/Terms";
 import FAQSPage from "../../Pages/FAQSPage/FAQSPage";
 import ContactPage from "../../Pages/ContactPage/ContactPage";
+import About from "../../Pages/About/About";
+import Privacy from "../../Pages/Privacy/Privacy";
+import Cookies from "../../Pages/Cookies/Cookies";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +43,18 @@ export const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <ContactPage></ContactPage>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/privacy',
+                element: <Privacy></Privacy>
+            },
+            {
+                path: '/cookies',
+                element: <Cookies></Cookies>
             }
         ]
     }

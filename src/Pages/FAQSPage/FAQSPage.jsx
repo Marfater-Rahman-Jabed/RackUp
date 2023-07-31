@@ -1,7 +1,11 @@
 import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/Logo.jpg'
+import { useEffect } from "react";
 const FAQSPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <div className="p-4 bg-base-300 ">
@@ -35,17 +39,17 @@ const FAQSPage = () => {
                         <div className="lg:w-1/2 md:w-1/2 mb-4">
                             <h1 className="text-primary text-4xl font-semibold py-3 ">General Questions</h1>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> Getting started with NextApp</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> Getting started with RackUp</h1>
                                 <p className="text-slate-500 text-justify ">Congue leo metus. Vitae arcu mollis blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus undo blandit</p>
                             </span>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> Download NextApp for Mac</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> Download RackUp for Mac</h1>
                                 <p className="text-slate-500 text-justify">
                                     An augue egestas an ipsum vitae emo ligula volute ante ipsum primis in purus ipsum primis in cubilia laoreet augue egestas
                                 </p>
                             </span>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> Download NextApp for Mac</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> Download RackUp for Mac</h1>
                                 <p className="text-slate-500 text-justify">
                                     Praesent semper, lacus sed cursus porta, odio augue ligula massa risus laoreet. Laoreet auctor massa varius undo egestas mauris suscipit semper lacus sed cursus porta feugiat primis
                                 </p>
@@ -58,7 +62,7 @@ const FAQSPage = () => {
                                 <p className="text-slate-500 text-justify">Etiam sit amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula egestas at suscipit lectus magna suscipit luctus undo blandit vitae purus</p>
                             </span>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> What file types can be recovered with NextApp?</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> What file types can be recovered with RackUp?</h1>
                                 <p className="text-slate-500 text-justify">
                                     An augue egestas an ipsum vitae emo ligula volute ante ipsum primis in faucibus sit ametn in odio. Integer congue leo metus, eu mollis lorem viverra suscipit lectus magna. Ultrice ligula magna and suscipit lectus gestas augue into cubilia luctus impedit
                                 </p>
@@ -84,13 +88,13 @@ const FAQSPage = () => {
                                 <p className="text-slate-500 text-justify">Congue leo metus. Vitae arcu mollis blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus undo blandit</p>
                             </span>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> How does NextApp deliver messaging?</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> How does RackUp deliver messaging?</h1>
                                 <p className="text-slate-500 text-justify">
                                     An augue egestas an ipsum vitae emo ligula volute ante ipsum primis in purus ipsum primis in cubilia laoreet augue egestas
                                 </p>
                             </span>
                             <span>
-                                <h1 className=" text-2xl font-semibold py-3 "> Does NextApp support live streaming?</h1>
+                                <h1 className=" text-2xl font-semibold py-3 "> Does RackUp support live streaming?</h1>
                                 <p className="text-slate-500 text-justify">
                                     Praesent semper, lacus sed cursus porta, odio augue ligula massa risus laoreet. Laoreet auctor massa varius undo egestas mauris suscipit semper lacus sed cursus porta feugiat primis
                                 </p>

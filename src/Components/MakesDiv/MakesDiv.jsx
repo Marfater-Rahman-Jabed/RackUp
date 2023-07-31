@@ -11,9 +11,9 @@ const MakesDiv = () => {
     return (
         <div className='bg-base-200 pb-16' >
             <div className="text-center pt-20 mb-16">
-                <h1 className="lg:text-5xl text-3xl font-bold lg:mb-8 mb-4">What Makes NextApp Different</h1>
-                <p className='text-xl text-slate-400'>
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
+                <h1 className="lg:text-5xl text-3xl font-bold lg:mb-8 mb-4">What Makes RackUp Different</h1>
+                <p className='text-xl text-slate-400 lg:px-36 md:px-24 px-2'>
+                    &quot;RackUp stands out with its seamless integration of cutting-edge technologies, creating a unified user experience across Android, iOS, and web platforms. Our startup takes personalized service to new heights, tailoring solutions that fit the unique needs of each individual user.&quot;
                 </p>
             </div>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-2 lg:px-20 px-2'>
@@ -28,7 +28,7 @@ const MakesDiv = () => {
                                 Friendly Interface
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                &quot;User satisfaction is priority. RackUp excels in user-friendly design for seamless app and web navigation, ensuring delightful experiences.&quot;
                             </p>
                         </span>
                     </div>
@@ -43,7 +43,7 @@ const MakesDiv = () => {
                                 Powerful Options
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                Robust toolset ignites transformative change, revolutionizing operations, boosting productivity, unlocking untapped potential for growth and success
                             </p>
                         </span>
                     </div>
@@ -56,10 +56,10 @@ const MakesDiv = () => {
                         </span>
                         <span>
                             <h1 className='text-xl font-bold mb-2'>
-                                Image Effects
+                                Uninterrupted Support
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                Round the clock - our Eternal Availability ensures your needs are met anytime, empowering seamless progress.
                             </p>
                         </span>
                     </div>
@@ -74,7 +74,7 @@ const MakesDiv = () => {
                                 Instant Notifications
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                Real-time alerts, lightning-fast - Instant Notifications keep you in the loop, ensuring you never miss a beat again!
                             </p>
                         </span>
                     </div>
@@ -93,7 +93,7 @@ const MakesDiv = () => {
                                 Real-Time Location
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                Pinpoint precision at your fingertips - Real-Time Location empowers you to track, navigate, and conquer with confidence!
                             </p>
                         </span>
                     </div>
@@ -112,7 +112,7 @@ const MakesDiv = () => {
                                 Super Fast Sync
                             </h1>
                             <p>
-                                Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae
+                                Blink and it&apos;s synced - Super Fast Sync ensures your data is lightning quick, keeping you ahead of the game!
                             </p>
                         </span>
                     </div>

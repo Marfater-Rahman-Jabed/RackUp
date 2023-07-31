@@ -13,8 +13,8 @@ const Pricing = () => {
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Pricing Package</span></h1>
             </div>
             <div className="py-20">
-                <h1 className="lg:text-5xl text-3xl font-bold  text-center mb-4">Try NextApp Free For 15 Days</h1>
-                <p className=" lg:text-center text-justify text-xl mx-2">You start with a free trial. We don’t collect your credit card until you&apos;ve  <br />determined NextApp is the right landing page to promote your App or product.</p>
+                <h1 className="lg:text-5xl text-3xl font-bold  text-center mb-4">Try RackUp Free For 15 Days</h1>
+                <p className=" lg:text-center text-justify text-xl mx-2">You start with a free trial. We don’t collect your credit card until you&apos;ve  <br />determined RackUp is the right landing page to promote your App or product.</p>
             </div>
             <div className="grid  lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 lg:mx-20  mx-4">
                 <div className='border-4 border-slate-100 rounded-lg p-12 shadow-lg'>
