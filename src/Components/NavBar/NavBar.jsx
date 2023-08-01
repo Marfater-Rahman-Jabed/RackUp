@@ -29,8 +29,8 @@ const NavBar = () => {
                             <li>
                                 <a>Blogs</a>
                                 <ul className="p-2">
-                                    <li><Link to='/blog1'>Business Blog</Link></li>
-                                    <li className='text-black'><Link to='/blog2'>Website Blog</Link></li>
+                                    <li className='text-black font-semibold'><Link to='/blog1'>App Blog</Link></li>
+                                    <li className='text-black font-semibold'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
                             </li>
 
@@ -39,7 +39,7 @@ const NavBar = () => {
                     <div className='flex lg:mx-4 md:mx-6'>
 
                         <Link to='/' className="" >
-                            <img src={Logo} alt="" className=' h-24  ' />
+                            <img src={Logo} alt="" className=' lg:h-24 md:h-24 h-20 ' />
                         </Link>
                     </div>
                 </div>
@@ -64,8 +64,8 @@ const NavBar = () => {
                             <details>
                                 <summary className='text-xl font-bold hover:text-white hover:bg-pink-500'>Blogs</summary>
                                 <ul className="p-2">
-                                    <li><Link to='/blog1' className='text-black'>App Blog</Link></li>
-                                    <li className='text-black'><Link to='/blog2'>Website Blog</Link></li>
+                                    <li><Link to='/blog1' className='text-black font-semibold'>App Blog</Link></li>
+                                    <li className='text-black font-semibold'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
                             </details>
                         </li>

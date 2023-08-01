@@ -1,10 +1,51 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 const ContactPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const option = form.opt.value;
+        const message = form.message.value
+
+        // console.log(name, email, option, message)
+        const SendMessage = {
+            name, email, message, type: option
+        }
+
+        fetch(`http://localhost:5000/sendEmail`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(SendMessage)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                toast.success('Your Email Is successfully Received. We will try to reply within 24 hour. If Any Emergency Please contact us via WhatsApp.', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
+                form.reset()
+            })
+
+
+    }
     return (
         <div className="bg-base-300 ">
             <div className="p-4 bg-base-300 ">
@@ -17,7 +58,7 @@ const ContactPage = () => {
                 </p>
             </div>
             <div className="lg:mx-80 md:mx-32 mx-4 pb-12">
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <div className="form-control w-full ">
                         <label className="label">
                             <span className="label-text"><h1 className="font-semibold text-xl">This question is about:</h1>
@@ -26,7 +67,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <select className="select select-bordered mb-6 h-16">
+                        <select name='opt' className="select select-bordered mb-6 h-16">
                             <option disabled defaultValue={`This question is about`}>This question is about... </option>
                             <option value={`Registering/Authorising`}>Registering/Authorising</option>
                             <option value={`Using Application`}>Using Application</option>
@@ -44,7 +85,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <input type="text" placeholder="Enter Your Name*" className="input input-bordered w-full h-16" />
+                        <input type="text" name='name' placeholder="Enter Your Name*" className="input input-bordered w-full h-16" required />
 
                     </div>
                     <div className="form-control w-full mb-6">
@@ -55,7 +96,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <input type="text" placeholder="Type here" className="input input-bordered w-full h-16" />
+                        <input type="text" name='email' placeholder="Type here" className="input input-bordered w-full h-16" required />
 
                     </div>
                     <div className="form-control mb-6">
@@ -66,7 +107,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <textarea className="textarea textarea-bordered h-36" placeholder="I hava a problem with..."></textarea>
+                        <textarea name='message' className="textarea textarea-bordered h-36" placeholder="I hava a problem with..." required></textarea>
 
                     </div>
                     <div className="flex justify-end mt-6">
