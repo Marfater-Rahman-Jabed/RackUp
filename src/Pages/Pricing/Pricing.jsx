@@ -3,13 +3,21 @@ import Starter from '../../assets/Starter.png'
 import Basic from '../../assets/Basic.png'
 import Premium from '../../assets/Premium.png'
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 const Pricing = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
     return (
         <div className="pb-10">
-            <div className="p-4 bg-base-300 ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-Pricing</title>
+                <link rel="canonical" href="/pricing" />
+                <meta name="description" content="RackUp Pricing Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,pricing, cost, rackupCost" />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Pricing Package</span></h1>
             </div>
             <div className="py-20">
@@ -62,7 +70,7 @@ const Pricing = () => {
                 </div>
             </div>
             <div>
-                <h1 className="text-center text-xl mt-10 mb-10"><b>Note!</b> Prices may vary from location to location due to local taxation laws <br /> and conversion rates from U.S. Dollars.</h1>
+                <h1 className="text-center text-xl pt-10 mb-10"><b>Note!</b> Prices may vary from location to location due to local taxation laws <br /> and conversion rates from U.S. Dollars.</h1>
             </div>
         </div>
     );

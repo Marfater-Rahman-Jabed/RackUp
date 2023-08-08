@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const Privacy = () => {
@@ -7,11 +8,18 @@ const Privacy = () => {
     }, [])
     return (
         <div>
-            <div className="p-4 bg-base-300 ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-Privacy</title>
+                <link rel="canonical" href="/privacy" />
+                <meta name="description" content="RackUp Privacy Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,RackUpPrivacy,privacy" />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Privacy Policy</span></h1>
             </div>
-            <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-28 pb-10">
-
+            <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify lg:pt-28 md:pt-28 pt-12 pb-10">
+                <h1 className="text-xl text-slate-300 mb-5">Last Updated: February 12, 2023</h1>
                 <div>
                     <h1 className="text-xl mb-2 font-semibold">
                         Your privacy is of utmost importance to RackUp. This Privacy Policy outlines how we collect, use, and protect your personal information when you access and use our website and services. By using RackUp, you consent to the practices described below:
@@ -105,14 +113,14 @@ const Privacy = () => {
                         10. Contact Us
                     </h1>
                     <p className="font-serif">
-                        If you have any questions or concerns about this Privacy Policy or our practices, please contact us at [contact@rackup.com].
+                        If you have any questions or concerns about this Privacy Policy or our practices, please contact us at <a href="mailto:rackupit@gmail.com" className="hover:underline font-bold"><i>rackupit@gmail.com</i></a>.
                     </p>
 
                 </div>
 
             </div>
-            <div className="px-32 mb-20 font-bold">
-                By using RackUp&apos;s services, you acknowledge that you have read, understood, and agreed to this Privacy Policy. For more details on how we handle your personal information, please review this Privacy Policy in full. Last updated on 07.31.2023.
+            <div className="lg:px-32 md:px-32 px-4 mb-20 font-bold">
+                By using RackUp&apos;s services, you acknowledge that you have read, understood, and agreed to this Privacy Policy. For more details on how we handle your personal information, please review this Privacy Policy in full.
             </div>
         </div>
     );

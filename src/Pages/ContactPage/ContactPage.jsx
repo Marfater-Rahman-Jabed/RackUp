@@ -1,37 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+// import { toast } from "react-toastify";
+import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
-
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-
-    const handleSubmit = (e) => {
+    const form = useRef();
+    const sendEmail = (e) => {
         e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const option = form.opt.value;
-        const message = form.message.value
 
-        // console.log(name, email, option, message)
-        const SendMessage = {
-            name, email, message, type: option
-        }
-
-        fetch(`http://localhost:5000/sendEmail`, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(SendMessage)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                toast.success('Your Email Is successfully Received. We will try to reply within 24 hour. If Any Emergency Please contact us via WhatsApp.', {
+        emailjs.sendForm('service_dyb2ri7', 'template_1ak3npt', form.current, 'o330KbaAw7_vQv8NS')
+            .then((result) => {
+                console.log(result.text);
+                toast.success('Your Email is received Successfully. We will try to replay within 24 hours. If any Emergency, please contact us with WhatsApp ', {
                     position: "top-center",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -41,24 +26,31 @@ const ContactPage = () => {
                     progress: undefined,
                     theme: "colored",
                 });
-                form.reset()
-            })
-
-
-    }
+                e.target.reset()
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
-        <div className="bg-base-300 ">
-            <div className="p-4 bg-base-300 ">
+        <div className="bg-white ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-Contact</title>
+                <link rel="canonical" href="/contact" />
+                <meta name="description" content="RackUp Contact Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,Contact" />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Contact</span></h1>
             </div>
             <div className='py-20  '>
                 <h1 className="lg:text-5xl text-3xl text-center mb-5 font-bold ">Want To Get In Touch? We’re Listening.</h1>
-                <p className="text-center text-xl text-slate-400">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br /> tempus, blandit posuere ligula varius magna congue cursus porta
+                <p className="text-center text-xl text-slate-400 lg:px-28 md:px-24 px-4">
+                    Our comprehensive Contact section has got you covered with all the answers you seek! No Hesitation, No Confusion, Feel Free to ask ! Don&apos;t be shy !
                 </p>
             </div>
             <div className="lg:mx-80 md:mx-32 mx-4 pb-12">
-                <form action="" onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <div className="form-control w-full ">
                         <label className="label">
                             <span className="label-text"><h1 className="font-semibold text-xl">This question is about:</h1>
@@ -67,7 +59,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <select name='opt' className="select select-bordered mb-6 h-16">
+                        <select name='from_type' className="select select-bordered mb-6 h-16">
                             <option disabled defaultValue={`This question is about`}>This question is about... </option>
                             <option value={`Registering/Authorising`}>Registering/Authorising</option>
                             <option value={`Using Application`}>Using Application</option>
@@ -85,7 +77,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <input type="text" name='name' placeholder="Enter Your Name*" className="input input-bordered w-full h-16" required />
+                        <input type="text" name='from_name' placeholder="Enter Your Name*" className="input input-bordered w-full h-16" required />
 
                     </div>
                     <div className="form-control w-full mb-6">
@@ -96,7 +88,7 @@ const ContactPage = () => {
                             </span>
 
                         </label>
-                        <input type="text" name='email' placeholder="Type here" className="input input-bordered w-full h-16" required />
+                        <input type="email" name='from_email' placeholder="Type here" className="input input-bordered w-full h-16" required />
 
                     </div>
                     <div className="form-control mb-6">
@@ -110,7 +102,7 @@ const ContactPage = () => {
                         <textarea name='message' className="textarea textarea-bordered h-36" placeholder="I hava a problem with..." required></textarea>
 
                     </div>
-                    <div className="flex justify-end mt-6">
+                    <div className="flex justify-end pt-6">
                         <input type="submit" value="Submit Request" className="btn btn-primary rounded-full font-bold" />
                     </div>
                 </form>

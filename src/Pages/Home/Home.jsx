@@ -13,6 +13,7 @@ import SimpleInterfaceSection from "../../Components/SimpleInterfaceSection/Simp
 import SubscribeSection from "../../Components/SubscribeSection/SubscribeSection";
 import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     useEffect(() => {
@@ -20,6 +21,13 @@ const Home = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-Home</title>
+                <link rel="canonical" href="/" />
+                <meta name="description" content="RackUp Home Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage," />
+            </Helmet>
             <HeroSection></HeroSection>
             <WorkFastDiv></WorkFastDiv>
             <PostPhotosSection></PostPhotosSection>

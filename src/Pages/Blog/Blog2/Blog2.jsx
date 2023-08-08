@@ -1,9 +1,20 @@
 import { Link } from "react-router-dom";
-
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 const Blog2 = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
-            <div className="p-4 bg-base-300 ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-Blog</title>
+                <link rel="canonical" href="/blog2" />
+                <meta name="description" content="RackUp Blog Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,blog" />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Blog Page</span></h1>
             </div>
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-20 pb-10">

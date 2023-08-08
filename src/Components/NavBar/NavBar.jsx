@@ -1,9 +1,39 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/lastNav.png'
+import { MdDarkMode } from 'react-icons/md';
+// import { CiLight } from 'react-icons/ci';
+import { FiSun } from 'react-icons/fi';
+import { useEffect, useState } from 'react';
 
 const NavBar = () => {
+
+    const [theme, setTheme] = useState('light');
+
+    useEffect(() => {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme("dark")
+        }
+        else {
+            setTheme("light")
+        }
+    }, [])
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark")
+        }
+        else {
+            document.documentElement.classList.remove("dark")
+        }
+    }, [theme]);
+
+    const handleSwitch = () => {
+        setTheme(theme === "dark" ? "light" : "dark")
+    }
+
+
     return (
-        <div style={{ position: "sticky", top: 0, zIndex: 100 }}>
+        <div style={{ position: "sticky", top: 0, zIndex: 100 }} >
             <div className="navbar bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-white py-4 " style={{ backgroundImage: "linear-gradient(180deg, purple 1px, 1px)", backgroundSize: "3px 3px" }}>
                 <div className="lg:navbar-start md:navbar-start">
 
@@ -11,11 +41,11 @@ const NavBar = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content pt-5 z-[1] p-2 shadow bg-white rounded-box w-52 text-black">
                             <li><Link to='/'>Home</Link></li>
                             <li>
                                 <a>Pages</a>
-                                <ul className="p-2">
+                                <ul className="p-2 bg-white">
 
                                     <li className='text-black font-semibold '><Link to='/makeDiv'>Our Goal</Link></li>
                                     <li className='text-black font-semibold '><Link to='/pricing'>Pricing</Link></li>
@@ -28,10 +58,15 @@ const NavBar = () => {
                             <li><Link to='/contact'>Contact</Link></li>
                             <li>
                                 <a>Blogs</a>
-                                <ul className="p-2">
+                                <ul className="p-2 ">
                                     <li className='text-black font-semibold'><Link to='/blog1'>App Blog</Link></li>
                                     <li className='text-black font-semibold'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
+                            </li>
+                            <li>
+                                <button onClick={handleSwitch} className=" ">{
+                                    theme === "dark" ? <span className='flex '><FiSun className='text-2xl me-3 '></FiSun>Light</span> : <span className='flex '><MdDarkMode className='text-2xl  hover:text-white me-3'></MdDarkMode>Dark</span>
+                                }</button>
                             </li>
 
                         </ul>
@@ -68,6 +103,11 @@ const NavBar = () => {
                                     <li className='text-black font-semibold'><Link to='/blog2'>Website Blog</Link></li>
                                 </ul>
                             </details>
+                        </li>
+                        <li>
+                            <button onClick={handleSwitch} className="animate-bounce mt-1">{
+                                theme === "dark" ? <FiSun className='text-2xl mt-1 '></FiSun> : <MdDarkMode className='text-2xl mt-1 hover:text-white'></MdDarkMode>
+                            }</button>
                         </li>
 
                     </ul>

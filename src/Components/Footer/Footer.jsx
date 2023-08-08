@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/NavBarImageFull.png'
+import { AiFillTwitterCircle, AiOutlineYoutube, AiFillLinkedin } from 'react-icons/ai';
+import { FaFacebookSquare } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className=''>
@@ -31,6 +33,12 @@ const Footer = () => {
                     <Link className="link link-hover" to='/terms'>Terms of use</Link>
                     <Link className="link link-hover" to='/privacy'>Privacy policy</Link>
                     <Link className="link link-hover" to='/cookies'>Cookie policy</Link>
+                    <div className='flex'>
+                        <AiOutlineYoutube className='text-3xl mx-2'></AiOutlineYoutube>
+                        <AiFillTwitterCircle className='text-3xl mx-2'></AiFillTwitterCircle>
+                        <FaFacebookSquare className='text-3xl mx-2'></FaFacebookSquare>
+                        <AiFillLinkedin className='text-3xl mx-2'></AiFillLinkedin>
+                    </div>
                 </div>
             </footer>
         </div>

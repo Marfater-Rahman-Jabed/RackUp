@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className='w-full'>
+    <div className='w-full overflow-x-clip '>
 
       <ScrollToTop className='bg-slate-500' smooth />
       <ToastContainer

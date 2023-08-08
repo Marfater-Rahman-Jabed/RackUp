@@ -51,10 +51,10 @@ const SimpleInterfaceSection = () => {
 
     };
     return (
-        <div className=" py-32">
+        <div className=" bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-white py-24 " style={{ backgroundImage: "linear-gradient(180deg, purple 1px, 1px)", backgroundSize: "3px 3px" }}>
             <div className="mb-10">
-                <h1 className='lg:text-5xl text-4xl font-bold text-center mb-8'>Simple Beautiful User Interface</h1>
-                <p className=" text-center text-xl md:px-10 lg:px-64">Embrace simplicity and beauty in our user interface. An elegant and delightful design awaits, making your experience unforgettable</p>
+                <h1 className='lg:text-5xl text-4xl font-bold text-center mb-8 text-white'>Simple Beautiful User Interface</h1>
+                <p className=" text-center text-xl md:px-10 lg:px-64 text-white">Embrace simplicity and beauty in our user interface. An elegant and delightful design awaits, making your experience unforgettable</p>
             </div>
             <div className="lg:px-24 md:px-12 px-5 py-6 ">
                 <Slider {...settings}>

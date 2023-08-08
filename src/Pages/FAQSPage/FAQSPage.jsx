@@ -2,13 +2,21 @@ import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/Logo.jpg'
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 const FAQSPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
     return (
         <div>
-            <div className="p-4 bg-base-300 ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-FAQ</title>
+                <link rel="canonical" href="/faqs" />
+                <meta name="description" content="RackUp FAQ Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,faq," />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">FAQs</span></h1>
             </div>
             <div className='lg:flex md:flex items-center justify-between lg:mx-16 md:mx-10 mx-8 mb-4'>
@@ -28,12 +36,12 @@ const FAQSPage = () => {
                         <h1>4.6/5 based on 1.014 ratings</h1>
                     </span>
                 </div>
-                <div>
-                    <button className='btn btn-primary rounded-full mx-2'><Link to='/contact'>Write A Review</Link></button>
+                <div className='mx-20'>
+
                     <button className='btn btn-outline rounded-full mx-2'><Link to='/faqs'>Ask A Question</Link></button>
                 </div>
             </div>
-            <div className="bg-base-300 py-10">
+            <div className="bg-white py-10">
                 <div className="lg:mx-28 md:mx-20 mx-4 pt-20">
                     <div className="lg:flex md:flex gap-10">
                         <div className="lg:w-1/2 md:w-1/2 mb-4">

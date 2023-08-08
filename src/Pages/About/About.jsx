@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -7,7 +8,14 @@ const About = () => {
     }, [])
     return (
         <div>
-            <div className="p-4 bg-base-300 ">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>RackUp-About</title>
+                <link rel="canonical" href="/about" />
+                <meta name="description" content="RackUp About Page" />
+                <meta name="keywords" content="Rackup,android,website,webpage,About" />
+            </Helmet>
+            <div className="p-4 bg-white ">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">About Us</span></h1>
             </div>
 

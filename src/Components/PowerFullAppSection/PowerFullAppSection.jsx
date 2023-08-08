@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import ReactVisibilitySensor from "react-visibility-sensor";
 const PowerFullAppSection = () => {
     return (
-        <div className="bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 lg:pt-32 pt-24 pb-16 bgCss">
+        <div className="bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 lg:pt-32 pt-24 pb-16 bgCss shadow-2xl">
             <div className="lg:mx-64 px-2">
                 <div className="mb-12">
                     <h1 className="lg:text-5xl text-4xl font-bold text-white text-center mb-4">More Faster, More Powerful App</h1>
