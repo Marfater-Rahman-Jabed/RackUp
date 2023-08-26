@@ -42,8 +42,8 @@ const Home = () => {
             <UnLockSection></UnLockSection>
             <QuestionSection></QuestionSection>
             <AliThemeSection></AliThemeSection>
-            <SubscribeSection></SubscribeSection>
             <MemberDetails></MemberDetails>
+            <SubscribeSection></SubscribeSection>
         </div>
     );
 };

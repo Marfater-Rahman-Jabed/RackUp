@@ -13,10 +13,10 @@ const MemberDetails = () => {
     //     window.location.href = mailtoLink;
     // }
     return (
-        <div className='py-16 shadow-2xl bg-slate-800'>
+        <div className=" bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700  py-24 " style={{ backgroundImage: "linear-gradient(180deg, purple 1px, 1px)", backgroundSize: "3px 3px" }}>
             <div className='pb-28 '>
                 <h1 className="lg:text-5xl text-4xl text-center font-bold mb-6 text-white">Our Team</h1>
-                <p className=" lg:text-center md:text-center text-justify text-white dark:text-white text-xl md:px-20 lg:px-64 px-4">
+                <p className=" lg:text-center md:text-center text-justify  text-white text-xl md:px-20 lg:px-64 px-4">
                     Discover the people behind RackUp IT, the Ultimate  Solution  for your IT needs. Our team is more than just a group of professionals, we are a family.
                 </p>
             </div>
