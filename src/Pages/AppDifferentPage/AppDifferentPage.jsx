@@ -7,7 +7,7 @@ const AppDifferentPage = () => {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div className="">
+        <div className="dark:bg-slate-600 dark:text-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-Goal</title>

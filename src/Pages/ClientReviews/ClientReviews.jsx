@@ -53,7 +53,7 @@ const ClientReviews = () => {
             })
     }
     return (
-        <div>
+        <div className="dark:bg-slate-600 dark:text-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-Review</title>
@@ -61,8 +61,8 @@ const ClientReviews = () => {
                 <meta name="description" content="RackUp Review Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,review" />
             </Helmet>
-            <div className="p-4 bg-white ">
-                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Client`s Reviews</span></h1>
+            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Client`s Reviews</span></h1>
             </div>
             <div className='lg:flex md:flex items-center justify-between lg:mx-16 md:mx-10 mx-8 mb-4'>
                 <div className="flex lg:mx-20 p-10">
@@ -82,7 +82,7 @@ const ClientReviews = () => {
                     </span>
                 </div>
                 <div className='mx-20'>
-                    <label htmlFor="ConfirmModal" className="btn btn-outline rounded-full mx-2" onClick={() => setCloseModal('ok')}>Write A Review</label>
+                    <label htmlFor="ConfirmModal" className="btn btn-outline rounded-full mx-2 dark:text-white" onClick={() => setCloseModal('ok')}>Write A Review</label>
 
                 </div>
             </div>

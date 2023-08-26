@@ -7,7 +7,7 @@ const Cookies = () => {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
+        <div className="dark:bg-slate-600 dark:text-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-Cookies</title>
@@ -15,8 +15,8 @@ const Cookies = () => {
                 <meta name="description" content="RackUp Cookies Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,cookies" />
             </Helmet>
-            <div className="p-4 bg-white ">
-                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Cookie Policy</span></h1>
+            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Cookie Policy</span></h1>
             </div>
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify lg:pt-28 md:pt-28 pt-12 pb-10">
                 <h1 className="text-xl text-slate-300 mb-5">Last Updated: February 12, 2023</h1>
@@ -111,7 +111,7 @@ const Cookies = () => {
 
 
             </div>
-            <div className="lg:px-32 md:px-32 px-4 mb-20 font-bold">
+            <div className="lg:px-32 md:px-32 px-4 pb-20 font-bold">
                 By using RackUp&apos;s services, you acknowledge that you have read, understood, and agreed to this Privacy Policy. For more details on how we handle your personal information, please review this Privacy Policy in full.
             </div>
 

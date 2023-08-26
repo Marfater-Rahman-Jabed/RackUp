@@ -7,7 +7,7 @@ const WorkFastDiv = () => {
     // const sectionRef = useRef(null);
 
     return (
-        <div className='lg:flex md:flex pt-16 shadow-2xl pb-10 dark:bg-blue-400'>
+        <div className='lg:flex md:flex pt-16 shadow-2xl pb-10 dark:bg-slate-600 dark:text-white'>
 
             <div className='lg:w-1/2 lg:flex lg:justify-end'>
                 <Fade delay={700} >
@@ -29,7 +29,7 @@ const WorkFastDiv = () => {
 
 
                 <Link to='/makeDiv'>
-                    <button className='btn btn-outline rounded-full btn-sm mt-10 ms-4' >Learn more about it</button>
+                    <button className='btn btn-outline rounded-full btn-sm mt-10 ms-4 dark:text-white' >Learn more about it</button>
                 </Link>
 
             </div>

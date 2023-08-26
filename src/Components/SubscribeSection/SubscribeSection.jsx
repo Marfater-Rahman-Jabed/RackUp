@@ -1,7 +1,7 @@
 
 const SubscribeSection = () => {
     return (
-        <div className="bg-white pb-10 shadow-2xl">
+        <div className="bg-white pb-10  dark:bg-slate-600 dark:text-white">
             <div className="pt-20">
                 <h1 className="text-center">GRAB RackUp FOR THE BEST PRICE TODAY</h1>
             </div>

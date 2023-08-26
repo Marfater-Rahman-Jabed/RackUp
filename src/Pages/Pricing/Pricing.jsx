@@ -9,7 +9,7 @@ const Pricing = () => {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div className="pb-10">
+        <div className="dark:bg-slate-600 dark:text-white pb-10">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-Pricing</title>
@@ -17,8 +17,8 @@ const Pricing = () => {
                 <meta name="description" content="RackUp Pricing Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,pricing, cost, rackupCost" />
             </Helmet>
-            <div className="p-4 bg-white ">
-                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Pricing Package</span></h1>
+            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Pricing Package</span></h1>
             </div>
             <div className="py-20">
                 <h1 className="lg:text-5xl text-3xl font-bold  text-center mb-4">Try RackUp Free For 15 Days</h1>
@@ -36,7 +36,7 @@ const Pricing = () => {
 
 
                     <div className='text-center'>
-                        <button className='btn btn-outline px-16  rounded-full'>Upgrade to pro</button>
+                        <button className='btn btn-outline px-16  rounded-full dark:text-white'>Upgrade to pro</button>
                     </div>
 
                 </div>
@@ -64,7 +64,7 @@ const Pricing = () => {
                     <h1 className='text-center text-xl mb-4 '><b>50 MongoDB</b> Database</h1><hr />
                     <h1 className='text-center text-xl mb-12 '><b>24/7</b> Support</h1>
                     <div className='text-center'>
-                        <button className='btn btn-outline px-16 rounded-full'>Upgrade to pro</button>
+                        <button className='btn btn-outline px-16 rounded-full dark:text-white'>Upgrade to pro</button>
                     </div>
 
                 </div>

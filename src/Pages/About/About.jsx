@@ -7,7 +7,7 @@ const About = () => {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
+        <div className="dark:bg-slate-600 dark:text-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-About</title>
@@ -15,8 +15,8 @@ const About = () => {
                 <meta name="description" content="RackUp About Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,About" />
             </Helmet>
-            <div className="p-4 bg-white ">
-                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">About Us</span></h1>
+            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">About Us</span></h1>
             </div>
 
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify py-16">

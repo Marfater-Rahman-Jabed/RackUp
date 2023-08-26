@@ -14,6 +14,7 @@ import SubscribeSection from "../../Components/SubscribeSection/SubscribeSection
 import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
 import { Helmet } from "react-helmet";
+import MemberDetails from "../../Components/MemberDetails/MemberDetails";
 
 const Home = () => {
     useEffect(() => {
@@ -42,6 +43,7 @@ const Home = () => {
             <QuestionSection></QuestionSection>
             <AliThemeSection></AliThemeSection>
             <SubscribeSection></SubscribeSection>
+            <MemberDetails></MemberDetails>
         </div>
     );
 };

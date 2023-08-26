@@ -9,10 +9,10 @@ import { Fade } from 'react-awesome-reveal';
 const MakesDiv = () => {
     // const sectionRef = useRef(null);
     return (
-        <div className='bg-white pb-16 shadow-2xl' >
+        <div className='bg-white pb-16 shadow-2xl dark:bg-slate-600 dark:text-white' >
             <div className="text-center pt-20 mb-16">
                 <h1 className="lg:text-5xl text-3xl font-bold lg:mb-8 mb-4">What Makes RackUp Different</h1>
-                <p className='text-xl text-justify lg:text-center text-slate-400 lg:px-36 md:px-24 px-6'>
+                <p className='text-xl text-justify lg:text-center text-slate-400 dark:text-white lg:px-36 md:px-24 px-6'>
                     &quot;RackUp stands out with its seamless integration of cutting-edge technologies, creating a unified user experience across Android, iOS, and web platforms. Our startup takes personalized service to new heights, tailoring solutions that fit the unique needs of each individual user.&quot;
                 </p>
             </div>
@@ -21,7 +21,7 @@ const MakesDiv = () => {
                 <Fade direction='up'>
                     <div className='lg:w-80 w-96 flex  mb-4 '>
                         <span>
-                            <TbHandClick className='text-5xl pt-1 text-slate-600 mr-3'></TbHandClick>
+                            <TbHandClick className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></TbHandClick>
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>
                             <h1 className='text-xl font-bold mb-2'>
@@ -36,7 +36,7 @@ const MakesDiv = () => {
                 <Fade direction='up'>
                     <div className='lg:w-80 w-96 flex  mb-4'>
                         <span>
-                            <IoIosOptions className='text-5xl pt-1 text-slate-600 mr-3'></IoIosOptions>
+                            <IoIosOptions className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></IoIosOptions>
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>
                             <h1 className='text-xl font-bold mb-2'>
@@ -51,7 +51,7 @@ const MakesDiv = () => {
                 <Fade direction='up'>
                     <div className='lg:w-80 w-96 flex  mb-4'>
                         <span>
-                            <CiImageOn className='text-5xl pt-1 text-slate-600 mr-3'></CiImageOn>
+                            <CiImageOn className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></CiImageOn>
 
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>
@@ -67,7 +67,7 @@ const MakesDiv = () => {
                 <Fade direction='up'>
                     <div className='lg:w-80 w-96 flex  mb-4'>
                         <span>
-                            <BiNotification className='text-5xl pt-1 text-slate-600 mr-3'></BiNotification>
+                            <BiNotification className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></BiNotification>
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>
                             <h1 className='text-xl font-bold mb-2'>
@@ -86,7 +86,7 @@ const MakesDiv = () => {
                     <div className='lg:w-80 w-96 flex  mb-4'>
                         <span>
 
-                            <HiOutlineLocationMarker className='text-5xl pt-1 text-slate-600 mr-3'></HiOutlineLocationMarker>
+                            <HiOutlineLocationMarker className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></HiOutlineLocationMarker>
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>
                             <h1 className='text-xl font-bold mb-2'>
@@ -104,7 +104,7 @@ const MakesDiv = () => {
                 <Fade direction='up'>
                     <div className='lg:w-80 w-96 flex  mb-4'>
                         <span>
-                            <GoSync className='text-5xl pt-1 text-slate-600 mr-3'></GoSync>
+                            <GoSync className='text-5xl pt-1 text-slate-600 dark:text-white mr-3'></GoSync>
 
                         </span>
                         <span className='lg:pe-0 md:pe-0 pe-6'>

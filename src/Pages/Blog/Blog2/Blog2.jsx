@@ -6,7 +6,7 @@ const Blog2 = () => {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
+        <div className="dark:bg-slate-600 dark:text-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>RackUp-Blog</title>
@@ -14,8 +14,8 @@ const Blog2 = () => {
                 <meta name="description" content="RackUp Blog Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,blog" />
             </Helmet>
-            <div className="p-4 bg-white ">
-                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 text-xl mx-3 font-semibold">Blog Page</span></h1>
+            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+                <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Blog Page</span></h1>
             </div>
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-20 pb-10">
                 <h1 className="text-4xl font-bold">  TITLE : <span className="text-4xl font-semibold">Why Retailers Need Website In Their Business.</span> </h1>

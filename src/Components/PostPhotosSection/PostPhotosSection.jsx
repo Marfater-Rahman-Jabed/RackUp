@@ -3,7 +3,7 @@ import Logo3 from '../../assets/Hero-image-03.png'
 import { Fade } from 'react-awesome-reveal';
 const PostPhotosSection = () => {
     return (
-        <div className='lg:flex md:flex pt-16 bg-slate-800 pt-20 pb-10 lg:ps-16 shadow-2xl'>
+        <div className='lg:flex md:flex  bg-slate-800 pt-20 pb-10 lg:ps-16 shadow-2xl'>
             <div className='lg:w-1/2 lg:flex lg:justify-end'>
                 <Fade direction='left' duration={3000}>
                     <img src={Logo3} alt="" className='lg:w-[40vw]  lg:h-[70vh]' />
