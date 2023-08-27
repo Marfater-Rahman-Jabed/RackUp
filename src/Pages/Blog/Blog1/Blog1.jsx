@@ -19,7 +19,7 @@ const Blog1 = () => {
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Blog Page</span></h1>
             </div>
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-20 pb-10">
-                <h1 className="text-4xl font-bold">  TITLE : <span className="text-4xl font-semibold">Why Retailers Need App In Their Business.</span> </h1>
+                <h1 className="text-4xl font-bold"> Why Retailers Need App In Their Business.</h1>
 
                 <div className=" py-10 ">
                     <p className="font-medium text-xl">An app can indeed be a game-changer for a retailer business, especially for small businesses targeting the North American market. Here are some key ways an app can bring significant benefits:</p>

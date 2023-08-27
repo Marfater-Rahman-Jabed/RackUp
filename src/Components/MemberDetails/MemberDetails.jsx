@@ -21,7 +21,7 @@ const MemberDetails = () => {
                 </p>
             </div>
             {/* <a href="https://www.linkedin.com/in/marfater-rahman-jabed-17541b244/" target='__blank' className='text-white'><BsLinkedin></BsLinkedin></a> */}
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-24 lg:px-10 md:px-4'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-24 lg:px-10 md:px-1 gap-2'>
                 <div className="cards dark:bg-black dark:text-white">
                     <div className="imgbox">
                         <img

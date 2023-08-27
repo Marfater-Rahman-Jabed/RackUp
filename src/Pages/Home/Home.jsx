@@ -10,7 +10,7 @@ import PostPhotosSection from "../../Components/PostPhotosSection/PostPhotosSect
 import PowerFullAppSection from "../../Components/PowerFullAppSection/PowerFullAppSection";
 import QuestionSection from "../../Components/QuestionSection/QuestionSection";
 import SimpleInterfaceSection from "../../Components/SimpleInterfaceSection/SimpleInterfaceSection";
-import SubscribeSection from "../../Components/SubscribeSection/SubscribeSection";
+// import SubscribeSection from "../../Components/SubscribeSection/SubscribeSection";
 import UnLockSection from "../../Components/UnLockSection/UnLockSection";
 import WorkFastDiv from "../../Components/WorkFastDiv/WorkFastDiv";
 import { Helmet } from "react-helmet";
@@ -43,7 +43,7 @@ const Home = () => {
             <QuestionSection></QuestionSection>
             <AliThemeSection></AliThemeSection>
             <MemberDetails></MemberDetails>
-            <SubscribeSection></SubscribeSection>
+            {/* <SubscribeSection></SubscribeSection> */}
         </div>
     );
 };

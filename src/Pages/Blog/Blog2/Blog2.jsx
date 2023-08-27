@@ -18,7 +18,7 @@ const Blog2 = () => {
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">Blog Page</span></h1>
             </div>
             <div className=" lg:mx-52 md:mx-32 mx-6 lg:text-justify md:text-justify pt-20 pb-10">
-                <h1 className="text-4xl font-bold">  TITLE : <span className="text-4xl font-semibold">Why Retailers Need Website In Their Business.</span> </h1>
+                <h1 className="text-4xl font-bold">Why Retailers Need Website In Their Business. </h1>
 
                 <div className=" py-10 ">
                     <p className="font-medium text-xl">Online browsing and retail go hand-in-hand nowadays. Surprisingly, reports show 46 percent of small businesses still don’t have a website. One reason for this shocking news is retailers often overestimate the cost of setting up a website. Another reason is they feel that if they create a site, they have to have an e-commerce store and they don’t think online selling would be profitable (or achievable) for their particular business.</p>

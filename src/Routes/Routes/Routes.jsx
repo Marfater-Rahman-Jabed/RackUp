@@ -12,6 +12,8 @@ import Privacy from "../../Pages/Privacy/Privacy";
 import Cookies from "../../Pages/Cookies/Cookies";
 import Blog1 from "../../Pages/Blog/Blog1/Blog1";
 import Blog2 from "../../Pages/Blog/Blog2/Blog2";
+import AppDemo from "../../Pages/Demo/AppDemo/AppDemo";
+import WebDemo from "../../Pages/Demo/WebDemo/WebDemo";
 
 export const router = createBrowserRouter([
     {
@@ -65,6 +67,14 @@ export const router = createBrowserRouter([
             {
                 path: '/blog2',
                 element: <Blog2></Blog2>
+            },
+            {
+                path: '/appdemo',
+                element: <AppDemo></AppDemo>
+            },
+            {
+                path: '/webdemo',
+                element: <WebDemo></WebDemo>
             }
         ]
     }
