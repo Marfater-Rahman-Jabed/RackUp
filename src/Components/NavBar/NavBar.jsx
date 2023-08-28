@@ -85,34 +85,34 @@ const NavBar = () => {
                 </div>
                 <div className="lg:navbar-end md:navbar-center  hidden lg:flex md:flex lg:me-6 ">
                     <ul className="menu menu-horizontal px-1 ">
-                        <div className='text-xl font-bold  hover:bg-pink-500 rounded-md'><li><Link to='/' className='hover:text-white dark:text-black lg:mx-2 mx-1'>Home</Link></li></div>
+                        <div className='text-xl font-bold p-2 hover:bg-pink-500 rounded-md'><label><Link to='/' className='hover:text-white dark:text-black lg:mx-2 mx-1'>Home</Link></label></div>
 
 
-                        <div className="dropdown dropdown-hover  lg:px-2 px-1">
+                        <div className="dropdown dropdown-hover   px-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white rounded-t-lg p-2 hover:bg-pink-500 dark:text-black flex'>Pages<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tl-none rounded-md w-44 bg-pink-500">
-                                <li ><Link to='/makeDiv' className=' text-white hover:bg-blue-700 hover:text-white font-semibold  '>Our Goal</Link></li>
-                                <li ><Link to='/pricing' className=' text-white hover:bg-blue-700 hover:text-white font-semibold '>Pricing</Link></li>
-                                <li ><Link to='/reviews' className='text-white hover:bg-blue-700 hover:text-white font-semibold '>Review</Link></li>
-                                <li ><Link to='/faqs' className='text-white hover:bg-blue-700 hover:text-white font-semibold '>FAQs</Link></li>
-                                <li ><Link to='/terms' className='text-white hover:bg-blue-700 hover:text-white font-semibold '>Terms</Link></li>
+                                <li ><Link to='/makeDiv' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Our Goal</Link></li>
+                                <li ><Link to='/pricing' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Pricing</Link></li>
+                                <li ><Link to='/reviews' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Review</Link></li>
+                                <li ><Link to='/faqs' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>FAQs</Link></li>
+                                <li ><Link to='/terms' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Terms</Link></li>
                             </ul>
                         </div>
 
-                        <div className='text-xl font-bold hover:text-white hover:bg-pink-500 rounded-md lg:mx-2 mx-1'><li><Link to='/contact' className='hover:text-white dark:text-black'>Contact</Link></li></div>
+                        <div className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-md  mx-1'><label><Link to='/contact' className='hover:text-white dark:text-black'>Contact</Link></label></div>
 
-                        <div className="dropdown dropdown-hover  lg:mx-2 mx-1">
+                        <div className="dropdown dropdown-hover   mx-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-t-lg dark:text-black flex'>Blogs<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tl-none rounded-md w-44 bg-pink-500">
-                                <li><Link to='/blog1' className=' text-white hover:bg-blue-700 hover:text-white font-semibold  '>App Blog</Link></li>
-                                <li ><Link to='/blog2' className=' text-white hover:bg-blue-700 hover:text-white font-semibold  '>Website Blog</Link></li>
+                                <li><Link to='/blog1' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Blog</Link></li>
+                                <li ><Link to='/blog2' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Blog</Link></li>
                             </ul>
                         </div>
-                        <div className="dropdown dropdown-hover dropdown-end lg:mx-2 mx-1">
+                        <div className="dropdown dropdown-hover dropdown-end  mx-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-t-lg dark:text-black flex'>Demo<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tr-none rounded-md w-44 bg-pink-500">
-                                <li><Link to='/appdemo' className=' text-white hover:bg-blue-700 hover:text-white font-semibold  '>App Demo</Link></li>
-                                <li ><Link to='/webdemo' className=' text-white hover:bg-blue-700 hover:text-white font-semibold  '>Website Demo</Link></li>
+                                <li><Link to='/appdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Demo</Link></li>
+                                <li ><Link to='/webdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Demo</Link></li>
                             </ul>
                         </div>
 
