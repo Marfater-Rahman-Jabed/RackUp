@@ -1,63 +1,63 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import ReactPlayer from 'react-player'
-import { PiVideoLight } from 'react-icons/pi'
-// import { AiOutlinePlayCircle } from 'react-icons/ai'
-import { useState } from "react";
-import { Fade } from "react-awesome-reveal";
+// import { Link } from "react-router-dom";
+// import ReactPlayer from 'react-player'
+// import { PiVideoLight } from 'react-icons/pi'
+// // import { AiOutlinePlayCircle } from 'react-icons/ai'
+// import { useState } from "react";
+// import { Fade } from "react-awesome-reveal";
 // import { useRef } from "react";
 // import './AppDemo.css'
 const AppDemo = () => {
-    const totalVideos = [
-        {
-            _id: '01',
-            src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
-            title: 'ABCDE',
+    // const totalVideos = [
+    //     {
+    //         _id: '01',
+    //         src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
+    //         title: 'ABCDE',
 
-        },
-        {
-            _id: '02',
-            src: 'https://youtu.be/rMebArjihi8?si=enuFKs88myBi0mSL',
-            title: 'FGHIJ'
-        },
-        {
-            _id: '03',
-            src: 'https://youtu.be/7UbpNPb255k?si=IYiMAG_M8E4_9F5e',
-            title: 'KLMNOdfdsvfdgbfbdvfdvdskjsdjkjcvifdhvjcvjfvfoddsdlvvnsdfekjbnfmnckvjfdvncx nfdkjvndksjvjids'
-        },
-        {
-            _id: '04',
-            src: 'https://youtube.com/shorts/zKr31xFo1Ig?feature=share',
-            title: 'PQRST'
-        },
-        {
-            _id: '05',
-            src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
-            title: 'UVWXY'
-        },
-        {
-            _id: '06',
-            src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
-            title: 'ZABCD'
-        },
-    ]
+    //     },
+    //     {
+    //         _id: '02',
+    //         src: 'https://youtu.be/rMebArjihi8?si=enuFKs88myBi0mSL',
+    //         title: 'FGHIJ'
+    //     },
+    //     {
+    //         _id: '03',
+    //         src: 'https://youtu.be/7UbpNPb255k?si=IYiMAG_M8E4_9F5e',
+    //         title: 'KLMNOdfdsvfdgbfbdvfdvdskjsdjkjcvifdhvjcvjfvfoddsdlvvnsdfekjbnfmnckvjfdvncx nfdkjvndksjvjids'
+    //     },
+    //     {
+    //         _id: '04',
+    //         src: 'https://youtube.com/shorts/zKr31xFo1Ig?feature=share',
+    //         title: 'PQRST'
+    //     },
+    //     {
+    //         _id: '05',
+    //         src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
+    //         title: 'UVWXY'
+    //     },
+    //     {
+    //         _id: '06',
+    //         src: 'https://youtu.be/fnWLcyXTISc?si=sr3U_oqa4OGGhQNr',
+    //         title: 'ZABCD'
+    //     },
+    // ]
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    const [value, setValue] = useState(false)
-    const [url, setUrl] = useState([])
-    const handleVideo = (ids, src) => {
+    // const [value, setValue] = useState(false)
+    // const [url, setUrl] = useState([])
+    // const handleVideo = (ids, src) => {
 
-        // console.log(ids)
-        window.my_modal_5.showModal()
-        setUrl(src)
-        // setTitle(title)
-        setValue(true)
-    }
-    const handleRightClick = (e) => {
-        e.preventDefault();
-    }
+    //     // console.log(ids)
+    //     window.my_modal_5.showModal()
+    //     setUrl(src)
+    //     // setTitle(title)
+    //     setValue(true)
+    // }
+    // const handleRightClick = (e) => {
+    //     e.preventDefault();
+    // }
     // const playerRef = useRef(null);
     return (
         <div className="dark:bg-slate-600 pb-16">
@@ -68,7 +68,23 @@ const AppDemo = () => {
                 <meta name="description" content="RackUp Blog Page" />
                 <meta name="keywords" content="Rackup,android,website,webpage,blog" />
             </Helmet>
-            <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
+            <div className='flex justify-center items-center h-full py-36 '>
+                <div className='flex justify-center items-center h-full'>
+                    <p className='text-7xl font-bold dark:text-white'>C</p>
+                    <p className='w-10 h-10 border-8 rounded-full animate-spin border-dashed mt-6 border-purple-700 dark:border-yellow-400'> </p>
+                    <p className='text-7xl font-bold dark:text-white'>mingS</p>
+                    <p className='w-10 h-10 border-8 rounded-full animate-spin border-dashed mt-6 border-purple-700 dark:border-yellow-400  mx-1'> </p>
+                    <p className='w-10 h-10 border-8 rounded-full animate-spin border-dashed mt-6 border-purple-700 dark:border-yellow-400'> </p>
+                    <p className='text-7xl font-bold dark:text-white'>n</p>
+                    <p className='border-4 mt-10 border-purple-700 dark:border-yellow-400 border-dotted  animate-pulse mx-1'></p>
+                    <p className='border-4 mt-10 border-purple-700 dark:border-yellow-400 border-dotted  animate-pulse mx-1'></p>
+                    <p className='border-4 mt-10 border-purple-700 dark:border-yellow-400  border-dotted  animate-pulse mx-1'></p>
+                    <p className='border-4 mt-10 border-purple-700 dark:border-yellow-400 border-dotted  animate-pulse mx-1'></p>
+
+                </div>
+
+            </div>
+            {/* <div className="p-4 bg-white dark:bg-slate-600 dark:text-white">
                 <h1><span className="text-sky-400 mr-3 lg:ms-12 text-xl font-semibold"><Link to='/'><u>Home</u></Link></span>&gt;&gt;<span className="text-slate-500 dark:text-white text-xl mx-3 font-semibold">App Demo</span></h1>
             </div>
             <div className='py-20  '>
@@ -106,7 +122,7 @@ const AppDemo = () => {
                     </div>
                 </form>
 
-            </dialog>
+            </dialog> */}
         </div >
     );
 };

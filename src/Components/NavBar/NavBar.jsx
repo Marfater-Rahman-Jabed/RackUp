@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/lastNav.png'
 import { MdDarkMode } from 'react-icons/md';
 // import { CiLight } from 'react-icons/ci';
 import { FiSun } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
-
+import './NavBar.css'
 const NavBar = () => {
 
     const [theme, setTheme] = useState('light');
@@ -85,34 +85,34 @@ const NavBar = () => {
                 </div>
                 <div className="lg:navbar-end md:navbar-center  hidden lg:flex md:flex lg:me-6 ">
                     <ul className="menu menu-horizontal px-1 ">
-                        <div className='text-xl font-bold p-2 hover:bg-pink-500 rounded-md'><label><Link to='/' className='hover:text-white dark:text-black lg:mx-2 mx-1'>Home</Link></label></div>
+                        <div className='text-xl font-bold p-2 hover:bg-pink-500 rounded-md'><label><NavLink to='/' className='hover:text-white dark:text-black lg:mx-2 mx-1'>Home</NavLink></label></div>
 
 
                         <div className="dropdown dropdown-hover   px-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white rounded-t-lg p-2 hover:bg-pink-500 dark:text-black flex'>Pages<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tl-none rounded-md w-44 bg-pink-500">
-                                <li ><Link to='/makeDiv' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Our Goal</Link></li>
-                                <li ><Link to='/pricing' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Pricing</Link></li>
-                                <li ><Link to='/reviews' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Review</Link></li>
-                                <li ><Link to='/faqs' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>FAQs</Link></li>
-                                <li ><Link to='/terms' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Terms</Link></li>
+                                <li ><NavLink to='/makeDiv' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Our Goal</NavLink></li>
+                                <li ><NavLink to='/pricing' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Pricing</NavLink></li>
+                                <li ><NavLink to='/reviews' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl '>Review</NavLink></li>
+                                <li ><NavLink to='/faqs' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>FAQs</NavLink></li>
+                                <li ><NavLink to='/terms' className='text-white hover:bg-blue-700 hover:text-white font-bold  text-xl'>Terms</NavLink></li>
                             </ul>
                         </div>
 
-                        <div className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-md  mx-1'><label><Link to='/contact' className='hover:text-white dark:text-black'>Contact</Link></label></div>
+                        <div className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-md  mx-1'><label><NavLink to='/contact' className='hover:text-white dark:text-black'>Contact</NavLink></label></div>
 
                         <div className="dropdown dropdown-hover   mx-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-t-lg dark:text-black flex'>Blogs<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tl-none rounded-md w-44 bg-pink-500">
-                                <li><Link to='/blog1' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Blog</Link></li>
-                                <li ><Link to='/blog2' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Blog</Link></li>
+                                <li><NavLink to='/blog1' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Blog</NavLink></li>
+                                <li ><NavLink to='/blog2' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Blog</NavLink></li>
                             </ul>
                         </div>
                         <div className="dropdown dropdown-hover dropdown-end  mx-1">
                             <label tabIndex={0} className='text-xl font-bold hover:text-white hover:bg-pink-500 p-2 rounded-t-lg dark:text-black flex'>Demo<svg className="fill-current mt-1 " xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></label>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow  rounded-tr-none rounded-md w-44 bg-pink-500">
-                                <li><Link to='/appdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Demo</Link></li>
-                                <li ><Link to='/webdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Demo</Link></li>
+                                <li><NavLink to='/appdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>App Demo</NavLink></li>
+                                <li ><NavLink to='/webdemo' className=' text-white hover:bg-blue-700 hover:text-white font-bold  text-xl  '>Website Demo</NavLink></li>
                             </ul>
                         </div>
 

@@ -6,7 +6,7 @@ import image4 from '../../assets/Hero-image-04.png'
 import { Fade } from 'react-awesome-reveal';
 const BeautySection = () => {
     return (
-        <div className='lg:flex md:flex bg-white lg:py-28 py-16 shadow-2xl dark:bg-slate-600 dark:text-white'>
+        <div className='lg:flex md:flex justify-center bg-white lg:py-28 py-16 shadow-2xl dark:bg-slate-600 dark:text-white'>
             <div className=' lg:w-[40vw] md:w-[40vw] w-[90vw] mx-auto lg:pt-20 pt-12 mb-5'>
                 <Fade direction='up'>
                     <h1 className='text-slate-300 font-bold'>BEAUTY OF SIMPLICITY</h1>

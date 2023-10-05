@@ -7,7 +7,7 @@ const WorkFastDiv = () => {
     // const sectionRef = useRef(null);
 
     return (
-        <div className='lg:flex md:flex pt-16 shadow-2xl pb-10 dark:bg-slate-600 dark:text-white'>
+        <div className='lg:flex md:flex pt-16 shadow-2xl pb-10 dark:bg-slate-600 dark:text-white justify-center'>
 
             <div className='lg:w-1/2 lg:flex lg:justify-end'>
                 <Fade delay={700} >

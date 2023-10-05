@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/NavBarImageFull.png'
 import { AiFillTwitterCircle, AiOutlineYoutube, AiFillLinkedin } from 'react-icons/ai';
-import { FaFacebookSquare } from 'react-icons/fa';
+import { BsInstagram } from 'react-icons/bs';
 const Footer = () => {
     return (
         <div className=''>
@@ -34,10 +34,10 @@ const Footer = () => {
                     <Link className="link link-hover" to='/privacy'>Privacy policy</Link>
                     <Link className="link link-hover" to='/cookies'>Cookie policy</Link>
                     <div className='flex'>
-                        <AiOutlineYoutube className='text-3xl mx-2'></AiOutlineYoutube>
-                        <AiFillTwitterCircle className='text-3xl mx-2'></AiFillTwitterCircle>
-                        <FaFacebookSquare className='text-3xl mx-2'></FaFacebookSquare>
-                        <AiFillLinkedin className='text-3xl mx-2'></AiFillLinkedin>
+                        <a href="https://youtube.com/@RackUpITSolution?si=jd0qxj-2xuTKjZWy" target='__blank'><AiOutlineYoutube className='text-3xl mx-2'></AiOutlineYoutube></a>
+                        <a href="https://x.com/RackUp_IT?t=rzuYNWpW7JVX9ocrkHfNeA&s=35" target='__blank'><AiFillTwitterCircle className='text-3xl mx-2'></AiFillTwitterCircle></a>
+                        <a href="https://instagram.com/rackupit?igshid=OGQ5ZDc2ODk2ZA==" target='__blank'><BsInstagram className='text-3xl mx-2'></BsInstagram></a>
+                        <a href="https://www.linkedin.com/company/rackup-it-solution/" target='__blank'><AiFillLinkedin className='text-3xl mx-2'></AiFillLinkedin></a>
                     </div>
                 </div>
             </footer>

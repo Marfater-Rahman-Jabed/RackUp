@@ -9,7 +9,7 @@ const HeroSection = () => {
     }
     return (
         <div className='shadow-2xl '>
-            <div className='lg:flex md:flex lg:flex-row md:flex-row flex-col items-center bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 lg:py-10 py-16 '>
+            <div className='lg:flex md:flex lg:flex-row md:flex-row flex-col items-center justify-center bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 lg:py-10 py-16 '>
                 <div className='visible lg:invisible md:invisible lg:w-0 md:w-0 w-full lg:0 md:h-0   me-16 '>
                     <Fade direction='left' duration={3000}>
                         <img src={HeroImage} alt="" onContextMenu={handlerightClick} className='lg:w-[40vw] lg:h-[85vh] md:h-[50vh]' />

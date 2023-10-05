@@ -56,11 +56,11 @@ const SimpleInterfaceSection = () => {
                 <h1 className='lg:text-5xl text-4xl font-bold text-center mb-8 text-white'>Simple Beautiful User Interface</h1>
                 <p className=" text-center text-xl md:px-10 lg:px-64 text-white">Embrace simplicity and beauty in our user interface. An elegant and delightful design awaits, making your experience unforgettable</p>
             </div>
-            <div className="lg:px-24 md:px-12 px-5 py-6 ">
+            <div className="lg:px-20 md:px-12 px-5 py-6 ">
                 <Slider {...settings}>
                     {
                         images.map((image, i) => <div key={i} className="mr-2" >
-                            <img src={image} alt="" className="lg:h-[70vh] w-[350px] " />
+                            <img src={image} alt="" className="lg:h-[70vh] lg:w-[28vw] w-[350px] " />
                         </div>)
                     }
                 </Slider>

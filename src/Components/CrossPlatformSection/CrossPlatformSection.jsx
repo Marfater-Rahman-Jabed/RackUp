@@ -8,7 +8,7 @@ const CrossPlatformSection = () => {
                     RackUp is your all-in-one app, available on Android, iOS, Windows, Mac, and the Web. Enjoy seamless cross-platform convenience and versatility!
                 </p>
             </div>
-            <div>
+            <div className='text-center'>
                 <img src={Logo5} alt="" className=' ' />
             </div>
         </div>

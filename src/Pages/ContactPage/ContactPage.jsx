@@ -49,12 +49,12 @@ const ContactPage = () => {
                     Our comprehensive Contact section has got you covered with all the answers you seek! No Hesitation, No Confusion, Feel Free to ask ! Don&apos;t be shy !
                 </p>
             </div>
-            <div className="lg:mx-80 md:mx-32 mx-4 pb-12 ">
+            <div className="lg:mx-80 md:mx-32 mx-4 mb-12 bg-slate-800  p-6 rounded-lg">
                 <form ref={form} onSubmit={sendEmail}>
                     <div className="form-control w-full ">
                         <label className="label">
-                            <span className="label-text"><h1 className="font-semibold text-xl dark:text-white">This question is about:</h1>
-                                <h1 className="text-slate-500 dark:text-white">Choose a topic, so we know who to send your request to:
+                            <span className="label-text"><h1 className="font-semibold text-xl text-white">This question is about <span className="text-orange-700 text-2xl">*</span></h1>
+                                <h1 className="text-white">Choose a topic, so we know who to send your request to:
                                 </h1>
                             </span>
 
@@ -71,8 +71,8 @@ const ContactPage = () => {
                     </div>
                     <div className="form-control w-full mb-6">
                         <label className="label mb-2">
-                            <span className="label-text"><h1 className="font-semibold text-xl dark:text-white">Your Name:</h1>
-                                <h1 className="text-slate-500 dark:text-white">Please enter your real name:
+                            <span className="label-text"><h1 className="font-semibold text-xl text-white">Your Name <span className="text-orange-700 text-2xl">*</span></h1>
+                                <h1 className=" text-white">Please enter your real name:
                                 </h1>
                             </span>
 
@@ -82,19 +82,19 @@ const ContactPage = () => {
                     </div>
                     <div className="form-control w-full mb-6">
                         <label className="label mb-2">
-                            <span className="label-text"><h1 className="font-semibold text-xl dark:text-white">Your Email Address:</h1>
-                                <h1 className="text-slate-500 dark:text-white">Please carefully check your email address for accuracy. If your address is incorrect, we will not be able to reply:
+                            <span className="label-text"><h1 className="font-semibold text-xl text-white">Your Email Address <span className="text-orange-700 text-2xl">*</span></h1>
+                                <h1 className=" text-white">Please carefully check your email address for accuracy. If your address is incorrect, we will not be able to reply:
                                 </h1>
                             </span>
 
                         </label>
-                        <input type="email" name='from_email' placeholder="Type here" className="input input-bordered w-full h-16 dark:text-white" required />
+                        <input type="email" name='from_email' placeholder="Type here" className="input input-bordered w-full h-16 dark:text-black" required />
 
                     </div>
                     <div className="form-control mb-6">
                         <label className="label mb-2">
-                            <span className="label-text"><h1 className="font-semibold text-xl dark:text-white">Explain your question in details:</h1>
-                                <h1 className="text-slate-500 dark:text-white">Your OS version, RackUp version build, steps you did. Be VERY precise!
+                            <span className="label-text"><h1 className="font-semibold text-xl text-white">Explain your question in details <span className="text-orange-700 text-2xl">*</span></h1>
+                                <h1 className=" text-white">Your OS version, RackUp version build, steps you did. Be VERY precise!
                                 </h1>
                             </span>
 
@@ -102,7 +102,8 @@ const ContactPage = () => {
                         <textarea name='message' className="textarea textarea-bordered h-36 dark:text-black" placeholder="I hava a problem with..." required></textarea>
 
                     </div>
-                    <div className="flex justify-end pt-6">
+                    <div className="flex justify-end pt-6 gap-x-2">
+                        <input type="reset" value="Form Reset" className="btn btn-primary rounded-full font-bold" />
                         <input type="submit" value="Submit Request" className="btn btn-primary rounded-full font-bold" />
                     </div>
                 </form>
